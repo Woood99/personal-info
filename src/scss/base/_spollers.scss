@@ -3,7 +3,7 @@
         font-size: 20px;
 
         &:not(:last-child) {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
     }
 
@@ -11,8 +11,10 @@
         width: 100%;
         cursor: default;
         text-align: left;
-        border: 1px solid green;
+        padding: 10px 40px 10px 15px;
+        background-color: var(--shaft);
         position: relative;
+        color: var(--white);
 
         ._spoller-init & {
             cursor: pointer;
@@ -23,7 +25,7 @@
                 position: absolute;
                 right: 10px;
                 top: 50%;
-                background-color: #000;
+                background-color: var(--white);
                 height: 2px;
                 width: 15px;
                 transition: transform 0.5s ease 0s;
@@ -49,5 +51,13 @@
         }
     }
 
-    &__body {}
+    &__body {
+        color: var(--shaft);
+        font-size: 16px;
+        line-height: 120%;
+        padding: 12px 15px;
+        border: 1px solid var(--shaft);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
 }

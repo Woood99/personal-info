@@ -133,8 +133,8 @@
 
 
 // Подключение spollers
-// import * as spollersFunc from "./functions/spollers";
-// spollersFunc.spollers();
+import * as spollersFunc from "./functions/spollers";
+spollersFunc.spollers();
 
 
 // ========================================================================================

@@ -1,0 +1,47 @@
+.course {
+
+    &__list {}
+}
+
+.course-list {
+
+    &__item {}
+
+    &__btn {}
+
+    &__body {
+        >div {
+            padding: 15px 0;
+            position: relative;
+
+            &:first-child {
+                padding-top: 0;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 90%;
+                height: 1px;
+                background-color: var(--shaft);
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            &:last-child {
+                padding-bottom: 0;
+
+                &::after {
+                    width: 0;
+                }
+            }
+            img{
+                margin-top: 10px;
+                display: block;
+                max-width: 300px;
+                border-radius: 10px;
+            }
+        }
+    }
+}

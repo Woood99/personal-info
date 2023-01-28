@@ -20,7 +20,8 @@
 
 
 // small components
-// @import "./components/nav";
+@import "./components/chapter";
+@import "./components/course";
 
 
 // =============================================================================================================
@@ -28,7 +29,6 @@
 
 // big components
 @import "./components/header";
-@import "./components/hero";
 @import "./components/footer";
 
 

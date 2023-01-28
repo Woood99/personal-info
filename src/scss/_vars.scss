@@ -1,9 +1,9 @@
 // main
-$fontFamily: "asd";
+$fontFamily: "Inter";
 $fontSize: 14;
 $minWidth: 320;
 $maxWidth: 1920;
-$contentWidth: 1170;
+$contentWidth: 1270;
 $containerOffset: 15;
 $containerWidth: calc($contentWidth + ($containerOffset * 2));
 
@@ -14,14 +14,20 @@ $mainColor: #000; // Цвет шрифта по умолчанию
 :root {
 
     // additional colors
-    --accent: #000;
-    --primary: #fff;
+    --shaft: #3a3a3a;
+    --gray: #686868;
+    --dark-gray: #72727E;
+    --silver: #C0C0C0;
+    --blue: #446DF6;
+    --dark-blue: #141B41;
+    --white: #fff;
+    --water: #F7F8FD;
 }
 
 
 
 // others vars
-$transitionSpeed: 0.3s;
+$transitionSpeed: 0.2s;
 $transitionFunction: ease-in-out;
 
 

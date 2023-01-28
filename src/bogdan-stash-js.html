@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+"title": "Bogdan Stashchuk - Полный Курс По JavaScript (Включает 80 Задач)"
+})
+
+<body class="page__body">
+    <div class="site-container">
+        @include('partials/header.html')
+        <main class="main">
+            <section class="course gap-top-50">
+                <div class="container">
+                    <div data-spollers data-one-spoller class="course__list course-list spollers">
+                        <div class="course-list__item spollers__item">
+                            <button type="button" data-spoller class="btn btn-reset course-list__btn spollers__title">
+                                Важное в JavaScript
+                            </button>
+                            <div class="course-list__body spollers__body">
+                                <div>
+                                    Самое важное в JavaScript - выражения, функции, объекты
+                                </div>
+                                <div>
+                                    Практически все сущности в JavaScript - объекты
+                                </div>
+                                <div>
+                                    Объект - набор свойств "имя: значение". Имя ещё называют ключами.
+                                    <img src="./img/02/01.jpg" alt="">
+                                </div>
+                                <div>
+                                    Массив - это объект
+                                    <br>
+                                    Функция - это объект
+                                    <br>
+                                    Число и строка это примитивные значения и они ведут себя как объекты
+                                </div>
+                                <div>
+                                    Метод - это функция которая являеться значением свойства объекта.
+                                </div>
+                                <div>
+                                    <img src="./img/02/02.jpg" alt="">
+                                    console - объект.
+                                    <br>
+                                    . - это точечная запись. С помощью точечной записи получаем доступ к методу объекта.
+                                    <br>
+                                    log - метод.
+                                    <br>
+                                    ( ) - вызов метода log.
+                                    <br>
+                                    'Hello World' - аргумент. Значение типа 'string'.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @include('partials/footer.html')
+    </div>
+    @include('partials/popup.html')
+</body>
+
+
+</html>
