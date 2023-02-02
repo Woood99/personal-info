@@ -7,10 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#111111">
   <title>Bogdan Stashchuk — Полный Курс По JavaScript (Включает 80 Задач)</title>
-  <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
   <script defer src="js/main.js"></script>
@@ -27,43 +23,213 @@
         <main class="main">
             <section class="course gap-top-50">
                 <div class="container">
-                    <div data-spollers data-one-spoller class="course__list course-list spollers">
+                    <h2 class="chapter__title title-2">Bogdan Stashchuk — Полный Курс По JavaScript (Включает 80 Задач)
+                    </h2>
+                    <div data-spollers data-one-spoller
+                        class="gap-top-30 gap-bottom-30 course__list course-list spollers">
                         <div class="course-list__item spollers__item">
                             <button type="button" data-spoller class="btn btn-reset course-list__btn spollers__title">
                                 Важное в JavaScript
                             </button>
                             <div class="course-list__body spollers__body">
                                 <div>
-                                    Самое важное в JavaScript — выражения, функции, объекты
+                                    <p>
+                                        Самое важное в JavaScript — выражения, функции, объекты.
+                                    </p>
                                 </div>
                                 <div>
-                                    Практически все сущности в JavaScript — объекты
+                                    <p>
+                                        Практически все сущности в JavaScript — объекты.
+                                    </p>
                                 </div>
                                 <div>
-                                    Объект — набор свойств «имя: значение». Имя ещё называют ключами.
+                                    <p>
+                                        Объект — набор свойств «имя: значение». Имя ещё называют ключами.
+                                    </p>
                                     <img src="./img/02/01.jpg" alt="">
                                 </div>
                                 <div>
-                                    Массив — это объект
-                                    <br>
-                                    Функция — это объект
-                                    <br>
-                                    Число и строка это примитивные значения и они ведут себя как объекты
+                                    <ul>
+                                        <li>Массив — это объект</li>
+                                        <li>Функция — это объект</li>
+                                        <li>Число и строка это примитивные значения и они ведут себя как объекты</li>
+                                    </ul>
                                 </div>
                                 <div>
-                                    Метод — это функция которая являеться значением свойства объекта.
+                                    <p>Метод — это функция которая являеться значением свойства объекта.</p>
                                 </div>
                                 <div>
                                     <img src="./img/02/02.jpg" alt="">
-                                    console — объект.
-                                    <br>
-                                   . — это точечная запись. С помощью точечной записи получаем доступ к методу объекта.
-                                    <br>
-                                    log — метод.
-                                    <br>
-                                    () — вызов метода log.
-                                    <br>
-                                    'Hello World' — аргумент. Значение типа 'string'.
+                                    <ul>
+                                        <li>console — объект.</li>
+                                        <li>. — это точечная запись. С помощью точечной записи получаем доступ к методу
+                                            объекта.</li>
+                                        <li> log — метод.</li>
+                                        <li>() — вызов метода log.</li>
+                                        <li> 'Hello World' — аргумент. Значение типа 'string'.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p>
+                                        Любое выражение всегда возвращает значение
+                                    </p>
+                                    <img src="./img/02/03.jpg" alt="">
+                                    <ul>
+                                        <span>Примеры выражений и их результаты:</span>
+                                        <li>'abc' — 'abc'</li>
+                                        <li>10 — 10</li>
+                                        <li>5 + 2 — 7</li>
+                                        <li>c = 10 — вернёт 10</li>
+                                        <li>'Good ' + 'Evening' — 'Good Evening'</li>
+                                        <li>
+                                            <pre><code>a <= b || c !=d - true/false</code></pre>
+                                        </li>
+                                        <li>myFunction (c, d) — результат функции</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-list__item spollers__item">
+                            <button type="button" data-spoller class="btn btn-reset course-list__btn spollers__title">
+                                Переменные и типы
+                            </button>
+                            <div class="course-list__body spollers__body">
+                                <div>
+                                    <p>
+                                        Переменные дают возможность повторного доступа к значениям.
+                                    </p>
+                                </div>
+                                <div>
+                                    <ul>
+                                        <span>Как правильно называть переменные:</span>
+                                        <li class="def">
+                                            <span>PascalCase</span>
+                                            <p>
+                                                Используется для именования типов и классов в JS;
+                                            </p>
+                                        </li>
+                                        <li class="def">
+                                            <span>DB_PASSWORD</span>
+                                            <p>
+                                                Используется для именования переменной, значение которой известно до
+                                                запуска приложения и не меняется (const);
+                                            </p>
+                                        </li>
+                                        <li class="def">
+                                            <span>сamelCase</span>
+                                            <p>
+                                                Используется во всех остальных случаях, помимо вышеуказанных.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul>
+                                        <span>Объявление переменных</span>
+                                        <li class="def">
+                                            <span>let</span>
+                                            <p>
+                                                Можно переназначить, переприсвоить.
+                                                Можно не присваивать значение,
+                                                в таком случае значение будет undefined;
+                                            </p>
+                                        </li>
+                                        <li class="def">
+                                            <span>const</span>
+                                            <p>
+                                                Нельзя переназначить. Обязательно сразу присвоить значение.
+                                            </p>
+                                        </li>
+                                        <li class="def">
+                                            <span>var </span>
+                                            <p>
+                                                Ключевое слово до ES6
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul>
+                                        <span>Примитивные типы</span>
+                                        <li>string (строка)</li>
+                                        <li>boolean (логический)</li>
+                                        <li>number (число)</li>
+                                        <li>null</li>
+                                        <li>undefined</li>
+                                        <li>symbol (символ)</li>
+                                    </ul>
+                                    <p>
+                                        При присваивании значения такого типа, в памяти компьютера эти переменные будут
+                                        содержать значения.
+                                    </p>
+                                </div>
+                                <div>
+                                    <ul>
+                                        <span>Ссылочный тип</span>
+                                        <li>object (объект)</li>
+                                    </ul>
+                                    <p>
+                                        Переменная содержит ссылку на область в памяти где находится объект.
+                                    </p>
+                                    <div class="img-row">
+                                        <img src="./img/03/01.jpg" alt="">
+                                        <img src="./img/03/02.jpg" alt="">
+                                    </div>
+                                    <ol>
+                                        <li>Объявляется переменная objectA со значением object</li>
+                                        <li>В памяти будет создана переменная с названием objectA</li>
+                                        <li>Объект будет записан в другом месте памяти</li>
+                                        <li>В переменную objectA будет записана ссылка на объект</li>
+                                    </ol>
+                                    <img src="./img/03/03.jpg" alt="">
+                                    <p>
+                                        В данном примере копируется ссылка на объект objectA
+                                    </p>
+                                    <p>
+                                        В результате в памяти компьютера будут находится 2 переменные, которые будут
+                                        ссылаться на 1 объект.
+                                    </p>
+                                    <p>
+                                        При изменении значения свойства изменится объект. т.е значение поменяется
+                                        перейдя по ссылке.
+                                        (добавление свойства работает аналогично)
+                                    </p>
+                                </div>
+                                <div>
+                                    <p>
+                                        JavaScript — динамически типизируемый язык и позволяет объявлять функции,
+                                        объекты и переменные без объявления типа.
+                                    </p>
+                                    <p>
+                                        Стараться использовать const везде, где это возможно.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-list__item spollers__item">
+                            <button type="button" data-spoller class="btn btn-reset course-list__btn spollers__title">
+                                Объекты
+                            </button>
+                            <div class="course-list__body spollers__body">
+                                <div>
+                                    <h3 class="title-4">Создание объекта</h3>
+                                    <img src="./img/04/03.jpg" alt="">
+                                </div>
+                                <div>
+                                    <h3 class="title-4">Получение свойства</h3>
+                                    <img src="./img/04/05.jpg" alt="">
+                                </div>
+                                <div>
+                                    <h3 class="title-4">Добавление свойств</h3>
+                                    <img src="./img/04/01.jpg" style="max-width:400px" alt="">
+                                </div>
+                                <div>
+                                    <h3 class="title-4">Изменение значения свойства</h3>
+                                    <img src="./img/04/04.jpg" alt="">
+                                </div>
+                                <div>
+                                    <h3 class="title-4">Удаление свойств</h3>
+                                    <img src="./img/04/02.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -82,3 +248,12 @@
 </body>
 
 </html>
+
+<!-- <div class="course-list__item spollers__item">
+    <button type="button" data-spoller class="btn btn-reset course-list__btn spollers__title">
+        asd
+    </button>
+    <div class="course-list__body spollers__body">
+
+    </div>
+</div> -->
