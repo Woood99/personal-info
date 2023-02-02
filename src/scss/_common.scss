@@ -1,11 +1,16 @@
 .title-2 {
-    @include adaptiveValue("font-size", 28, 20);
+    @include adaptiveValue("font-size", 28, 24);
     line-height: 120%;
     font-weight: 600;
 }
 
 .title-3 {
-    @include adaptiveValue("font-size", 24, 16);
+    @include adaptiveValue("font-size", 24, 20);
+    line-height: 120%;
+    font-weight: 500;
+}
+.title-4 {
+    @include adaptiveValue("font-size", 22, 18);
     line-height: 120%;
     font-weight: 500;
 }
@@ -37,6 +42,9 @@
 .gap-top-30 {
     @include adaptiveValue("margin-top", 30, 20);
 }
+.gap-bottom-30 {
+    @include adaptiveValue("margin-bottom", 30, 20);
+}
 
 .gap-top-20 {
     @include adaptiveValue("margin-top", 20, 15);
@@ -56,4 +64,19 @@
 
 .gap-left-12 {
     margin-left: 12px;
+}
+
+.def {
+    >span:first-child {
+        font-weight: 700;
+        color: var(--blue);
+    }
+
+    >p {
+        display: inline;
+
+        &::before {
+            content: '-';
+        }
+    }
 }

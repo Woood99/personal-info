@@ -5,11 +5,26 @@
 
 .course-list {
 
-    &__item {}
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
 
     &__btn {}
 
     &__body {
+        pre {
+            font-size: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        code {
+            font-size: inherit;
+            font-family: inherit;
+        }
+
         >div {
             padding: 15px 0;
             position: relative;
@@ -36,11 +51,108 @@
                     width: 0;
                 }
             }
-            img{
-                margin-top: 10px;
+
+            img {
                 display: block;
                 max-width: 300px;
+                width: 100%;
                 border-radius: 10px;
+            }
+
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                >span:first-child {
+                    font-weight: 500;
+                    @include adaptiveValue("font-size",18 ,16 );
+                    line-height: 120%;
+
+                    ~li {
+                        margin-left: 15px;
+                    }
+                }
+
+                li {
+                    position: relative;
+                    margin-left: 0px;
+                    padding-left: 15px;
+
+                    &:not(:first-child) {
+                        margin-top: 5px;
+                    }
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 8px;
+                        left: 0;
+                        width: 5px;
+                        height: 5px;
+                        background-color: var(--shaft);
+                    }
+
+                    pre,
+                    code {
+                        display: inline-block;
+                    }
+                }
+            }
+
+            ol {
+                list-style: none;
+                counter-reset: list;
+                margin: 0;
+                padding: 0;
+
+                >span:first-child {
+                    font-weight: 500;
+                    @include adaptiveValue("font-size",18 ,16 );
+                    line-height: 120%;
+
+                    ~li {
+                        margin-left: 15px;
+                    }
+                }
+
+                li {
+                    position: relative;
+                    margin-left: 0px;
+
+                    &:not(:first-child) {
+                        margin-top: 5px;
+                    }
+
+                    &::before {
+                        counter-increment: list;
+                        content: counter(list)')';
+                        padding-right: 8px;
+                        font-weight: 500;
+                    }
+
+                    pre,
+                    code {
+                        display: inline-block;
+                    }
+                }
+            }
+
+            >* {
+                &:not(:first-child) {
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .img-row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+
+            img {
+                margin: 0 !important;
             }
         }
     }

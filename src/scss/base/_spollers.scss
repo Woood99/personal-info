@@ -1,10 +1,6 @@
 .spollers {
     &__item {
         font-size: 20px;
-
-        &:not(:last-child) {
-            margin-bottom: 15px;
-        }
     }
 
     &__title {
