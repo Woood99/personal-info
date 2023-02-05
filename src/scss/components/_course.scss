@@ -65,12 +65,16 @@
                 padding: 0;
 
                 >span:first-child {
+                    display: inline-block;
                     font-weight: 500;
                     @include adaptiveValue("font-size",18 ,16 );
                     line-height: 120%;
-
+                    margin-bottom: 5px;
                     ~li {
                         margin-left: 15px;
+                        &:nth-child(2){
+                            margin-top: 0;
+                        }
                     }
                 }
 
@@ -97,6 +101,18 @@
                     code {
                         display: inline-block;
                     }
+                    >*{
+                        &:not(:first-child){
+                            margin-top: 10px;
+                        }
+                    }
+                }
+                &.list--big-gap{
+                    li{
+                        &:not(:first-child) {
+                            margin-top: 15px;
+                        }
+                    }
                 }
             }
 
@@ -107,12 +123,16 @@
                 padding: 0;
 
                 >span:first-child {
+                    display: inline-block;
                     font-weight: 500;
                     @include adaptiveValue("font-size",18 ,16 );
                     line-height: 120%;
-
+                    margin-bottom: 5px;
                     ~li {
                         margin-left: 15px;
+                        &:nth-child(2){
+                            margin-top: 0;
+                        }
                     }
                 }
 
@@ -135,6 +155,18 @@
                     code {
                         display: inline-block;
                     }
+                    >*{
+                        &:not(:first-child){
+                            margin-top: 10px;
+                        }
+                    }
+                }
+                &.list--big-gap{
+                    li{
+                        &:not(:first-child) {
+                            margin-top: 15px;
+                        }
+                    }
                 }
             }
 
@@ -154,6 +186,9 @@
             img {
                 margin: 0 !important;
             }
+        }
+        .img--big{
+            max-width: 400px;
         }
     }
 }

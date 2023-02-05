@@ -200,35 +200,35 @@
                             </button>
                             <div class="course-list__body spollers__body">
                                 <div>
-                                    <h3 class="title-4">Создание объекта</h3>
+                                    <h4 class="title-4">Создание объекта</h4>
                                     <img src="./img/04/03.jpg" alt="">
                                 </div>
                                 <div>
-                                    <h3 class="title-4">Получение свойства</h3>
+                                    <h4 class="title-4">Получение свойства</h4>
                                     <img src="./img/04/05.jpg" alt="">
                                 </div>
                                 <div>
-                                    <h3 class="title-4">Добавление свойств</h3>
+                                    <h4 class="title-4">Добавление свойств</h4>
                                     <div class="img-row">
-                                        <img src="./img/04/01.jpg" style="max-width:400px" alt="">
-                                        <img src="./img/04/06.jpg" style="max-width:400px" alt="">
+                                        <img src="./img/04/01.jpg" class="img--big" alt="">
+                                        <img src="./img/04/06.jpg" alt="">
                                     </div>
                                 </div>
                                 <div>
-                                    <h3 class="title-4">Изменение значения свойства</h3>
+                                    <h4 class="title-4">Изменение значения свойства</h4>
                                     <img src="./img/04/04.jpg" alt="">
                                 </div>
                                 <div>
-                                    <h3 class="title-4">Удаление свойств</h3>
+                                    <h4 class="title-4">Удаление свойств</h4>
                                     <img src="./img/04/02.jpg" alt="">
                                 </div>
                                 <div>
-                                    <h3 class="title-4">Сокращенный формат записи свойств</h3>
+                                    <h4 class="title-4">Сокращенный формат записи свойств</h4>
                                     <img src="./img/04/07.jpg" alt="">
                                     <p>Сокращённые свойства рекомендуется размещать в начале объекта</p>
                                 </div>
                                 <div>
-                                    <h3 class="title-4">Глобальные объекты</h3>
+                                    <h4 class="title-4">Глобальные объекты</h4>
                                     <ul>
                                         <li class="def">
                                             <span>window</span>
@@ -251,6 +251,115 @@
                                     </ul>
                                     <p>Console - одно из свойств глобального объекта window</p>
                                     <img src="./img/04/08.jpg" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="title-4">Методы объекта</h4>
+                                    <img src="./img/04/09.jpg" class="img--big" alt="">
+                                    <p>
+                                        Если значение свойства функция - можно убирать ключевое слово function и ставить
+                                        круглые скопки после названия свойства, без двоеточия
+                                    </p>
+                                    <ul>
+                                        <span>Метод вызывается со скобками, свойство - без.</span>
+                                        <li class="def">
+                                            <span>user.ageGreeting</span>
+                                            <p>
+                                                Доступ к значению свойства
+                                            </p>
+                                        </li>
+                                        <li class="def">
+                                            <span>user.ageGreeting()</span>
+                                            <p>
+                                                Вызов метода
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="title-4">JSON</h4>
+                                    <div class="def">
+                                        <span>JSON (Javascript object notation)</span>
+                                        <p>
+                                            Формат обмена данными.
+                                        </p>
+                                    </div>
+                                    <p>
+                                        JSON передаётся в виде строки.
+                                    </p>
+                                    <img src="./img/04/10.jpg" alt="">
+                                    <ul>
+                                        <span>Конвертация JS объекта в JSON</span>
+                                        <li>JSON.stringify(аргумент)</li>
+                                        <li class="img-row">
+                                            <img src="./img/04/11.jpg" alt="">
+                                            <img src="./img/04/14.jpg" alt="">
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <span>Конвертация JSON в JS объект</span>
+                                        <li>JSON.parse(аргумент)</li>
+                                        <li class="img-row">
+                                            <img src="./img/04/12.jpg" alt="">
+                                            <img src="./img/04/13.jpg" alt="">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-list__item spollers__item">
+                            <button type="button" data-spoller class="btn btn-reset course-list__btn spollers__title">
+                                Мутация объектов
+                            </button>
+                            <div class="course-list__body spollers__body">
+                                <div>
+                                    <p>
+                                        Копирование примитивных типов происходит по значению (copy by value)
+                                    </p>
+                                    <p>
+                                        Копирование ссылочного типа (copy by reference) - меняется исходный объект
+                                    </p>
+                                </div>
+                                <div>
+                                    <ol class="list--big-gap">
+                                        <span>Как избежать мутаций (создание копий объекта и изменять копию, не меняя
+                                            оригинальный объект)</span>
+                                        <li>
+                                            <div class="def d-inline">
+                                                <span>Метод assign</span>
+                                                <p>
+                                                    Создаст новый объект - {}, и запишет все свойства объекта user.
+                                                    НО если у объекта есть вложенные объекты, то при создании нового
+                                                    объекта
+                                                    ссылки на них сохраняются.
+                                                </p>
+                                            </div>
+                                            <img src="./img/05/01.jpg" alt="">
+                                        </li>
+                                        <li>
+                                            <div class="def d-inline">
+                                                <span>Spread (Оператор разделения объекта на свойства)</span>
+                                                <p>
+                                                    Объект разделяется на свойства и сразу же собираются в новый
+                                                    объект который в {}.
+                                                    НО если у объекта есть вложенные объекты, то при создании нового
+                                                    объекта ссылки на них сохраняются.
+                                                    Аналог assign, но более удобнее и короче. 
+                                                </p>
+                                            </div>
+                                            <img src="./img/05/02.jpg" alt="">
+                                        </li>
+                                        <li>
+                                            <div class="def d-inline">
+                                                <span>JSON.parse - JSON.stringify</span>
+                                                <p>
+                                                  JSON.stringify конвертирует объект в строку,
+                                                  затем JSON.parse конвертирует обратно в объект.
+                                                  В результате получается полностью новый объект.
+                                                </p>
+                                            </div>
+                                            <img src="./img/05/03.jpg" class="img--big" alt="">
+                                        </li>
+                                    </ol>
                                 </div>
                             </div>
                         </div>

@@ -425,6 +425,14 @@ a {
   content: "-";
 }
 
+.d-inline-b {
+  display: inline-block;
+}
+
+.d-inline {
+  display: inline;
+}
+
 .course-list__item:not(:last-child) {
   margin-bottom: 15px;
 }
@@ -474,8 +482,10 @@ a {
   padding: 0;
 }
 .course-list__body > div ul > span:first-child {
+  display: inline-block;
   font-weight: 500;
   line-height: 120%;
+  margin-bottom: 5px;
 }
 @media (min-width: 81.25em) {
   .course-list__body > div ul > span:first-child {
@@ -494,6 +504,9 @@ a {
 }
 .course-list__body > div ul > span:first-child ~ li {
   margin-left: 15px;
+}
+.course-list__body > div ul > span:first-child ~ li:nth-child(2) {
+  margin-top: 0;
 }
 .course-list__body > div ul li {
   position: relative;
@@ -516,6 +529,12 @@ a {
 .course-list__body > div ul li code {
   display: inline-block;
 }
+.course-list__body > div ul li > *:not(:first-child) {
+  margin-top: 10px;
+}
+.course-list__body > div ul.list--big-gap li:not(:first-child) {
+  margin-top: 15px;
+}
 .course-list__body > div ol {
   list-style: none;
   counter-reset: list;
@@ -523,8 +542,10 @@ a {
   padding: 0;
 }
 .course-list__body > div ol > span:first-child {
+  display: inline-block;
   font-weight: 500;
   line-height: 120%;
+  margin-bottom: 5px;
 }
 @media (min-width: 81.25em) {
   .course-list__body > div ol > span:first-child {
@@ -544,6 +565,9 @@ a {
 .course-list__body > div ol > span:first-child ~ li {
   margin-left: 15px;
 }
+.course-list__body > div ol > span:first-child ~ li:nth-child(2) {
+  margin-top: 0;
+}
 .course-list__body > div ol li {
   position: relative;
   margin-left: 0px;
@@ -561,6 +585,12 @@ a {
 .course-list__body > div ol li code {
   display: inline-block;
 }
+.course-list__body > div ol li > *:not(:first-child) {
+  margin-top: 10px;
+}
+.course-list__body > div ol.list--big-gap li:not(:first-child) {
+  margin-top: 15px;
+}
 .course-list__body > div > *:not(:first-child) {
   margin-top: 10px;
 }
@@ -577,5 +607,8 @@ a {
 }
 .course-list__body .img-row img {
   margin: 0 !important;
+}
+.course-list__body .img--big {
+  max-width: 400px;
 }
 /*# sourceMappingURL=main.css.map */
