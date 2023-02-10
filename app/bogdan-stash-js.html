@@ -43,9 +43,14 @@
                                     </p>
                                 </div>
                                 <div>
-                                    <p>
-                                        Объект — набор свойств «имя: значение». Имя ещё называют ключами.
-                                    </p>
+                                    <div class="def">
+                                        <span>
+                                            Объект
+                                        </span>
+                                        <p>
+                                            это набор свойств «имя: значение». Имя ещё называют ключами.
+                                        </p>
+                                    </div>
                                     <img src="./img/02/01.jpg" alt="">
                                 </div>
                                 <div>
@@ -333,8 +338,10 @@
                                 </div>
                                 <div>
                                     <ol class="list--big-gap">
-                                        <span>Как избежать мутаций (создание копий объекта и изменять копию, не меняя
-                                            оригинальный объект)</span>
+                                        <span>
+                                            Как избежать мутаций (создание копий объекта и изменение копии, не меняя
+                                            оригинальный объект)
+                                        </span>
                                         <li>
                                             <div class="def d-inline">
                                                 <span>Метод assign</span>
@@ -364,9 +371,9 @@
                                             <div class="def d-inline">
                                                 <span>JSON.parse — JSON.stringify</span>
                                                 <p>
-                                                  JSON.stringify конвертирует объект в строку,
-                                                  затем JSON.parse конвертирует обратно в объект.
-                                                  В результате получается полностью новый объект.
+                                                    JSON.stringify конвертирует объект в строку,
+                                                    затем JSON.parse конвертирует обратно в объект.
+                                                    В результате получается полностью новый объект.
                                                 </p>
                                             </div>
                                             <img src="./img/05/03.jpg" class="img--big" alt="">
@@ -375,6 +382,353 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="course-list__item spollers__item">
+                            <button type="button" data-spoller class="btn btn-reset course-list__btn spollers__title">
+                                Функции
+                            </button>
+                            <div class="course-list__body spollers__body">
+                                <div>
+                                    <div class="def">
+                                        <span>Функция</span>
+                                        <p>
+                                            Блок кода, который можно выполнять многократно.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <ol>
+                                        <span>Функция может быть:</span>
+                                        <li>Именованной</li>
+                                        <li>Присвоенна переменной</li>
+                                        <li>Анонимной</li>
+                                        <li>Аргументом при вызове другой функции</li>
+                                        <li>Значение свойства объекта (методом)</li>
+                                    </ol>
+                                </div>
+                                <div>
+                                    <div class="def">
+                                        <span>Функция</span>
+                                        <p>
+                                            это объект.
+                                        </p>
+                                    </div>
+                                    <div class="img-row">
+                                        <img src="./img/06/01.jpg" alt="">
+                                        <img src="./img/06/02.jpg" class="img--big" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="title-4">Структура функции</h4>
+                                    <ul>
+                                        <span>
+                                            <img src="./img/06/03.jpg" alt="">
+                                        </span>
+                                        <li class="def">
+                                            <span>function</span>
+                                            <p>
+                                                ключевое слово
+                                            </p>
+                                        </li>
+                                        <li class="def">
+                                            <span>myFn</span>
+                                            <p>
+                                                имя функции
+                                            </p>
+                                        </li>
+                                        <li class="def">
+                                            <span>a, b</span>
+                                            <p>
+                                                параметры, ведут себя как переменные. Значения определяются в момент
+                                                вызова функции.
+                                            </p>
+                                        </li>
+                                        <li class="def">
+                                            <span>{…}</span>
+                                            <p>
+                                                тело функции
+                                            </p>
+                                        </li>
+                                        <li class="def">
+                                            <span>return</span>
+                                            <p>
+                                                возвращает результат. После return функция прекращает выполнение.
+                                                Если нет return, то возвращает undefined
+                                            </p>
+                                        </li>
+                                        <li class="def">
+                                            <span>myFn (10, 8)</span>
+                                            <p>
+                                                вызов функции с аргументами 10 и 8
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <p>
+                                        Внутри функции можно изменять внешний объект, он будет изменятся по ссылке,
+                                        но делать это крайне не рекомендуется.
+                                    </p>
+                                    <p>
+                                        Если же необходимо изменять объект внутри функции, лучшим решением будет создать
+                                        его копию
+                                        внутри функции.
+                                    </p>
+                                    <img src="./img/06/04.jpg" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="title-4">Колбэк функции</h4>
+                                    <div class="def">
+                                        <span>Колбэк функция</span>
+                                        <p>
+                                            это функция которая вызывается внутри другой функции.
+                                        </p>
+                                    </div>
+                                    <img src="./img/06/05.jpg" alt="">
+                                    <p>
+                                        У функции callFunctions параметр колбэк функция. т.е в теле 'callFunctions'
+                                        вызывается колбэк функция.
+                                    </p>
+                                    <img src="./img/06/06.jpg" alt="">
+                                    <p>
+                                        В данном примере встроенная функция setTimeout вызывает callback-функцию
+                                        printMyName.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h4 class="title-4">Правила работы с функциями</h4>
+                                    <ol>
+                                        <li>Называть функцию исходя из выполняемых задач</li>
+                                        <li>Одна функция должна выполнять одну задачу</li>
+                                        <li>Не рекомендуется изменять внешние относительно функции переменные</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-list__item spollers__item">
+                            <button type="button" data-spoller class="btn btn-reset course-list__btn spollers__title">
+                                Области видимости
+                            </button>
+                            <div class="course-list__body spollers__body">
+                                <div>
+                                    <p>
+                                        Область видимости определяет границы действия переменной
+                                    </p>
+                                </div>
+                                <div>
+                                    <h4 class="title-4">Типы областей видимости</h4>
+                                    <ol>
+                                        <li>Глобальная область видимости</li>
+                                        <li>Область видимости функции</li>
+                                        <li>Область видимости блока (любой код между { })</li>
+                                    </ol>
+                                </div>
+                                <div>
+                                    <h4 class="title-4">Пример как делать не рекомендуется</h4>
+                                    <img src="./img/07/01.jpg" alt="">
+                                    <ul>
+                                        <li>Объявлена функция myFn, внутри которой присваивается значение true
+                                            переменной 'a'
+                                        </li>
+                                        <li>
+                                            Переменной 'a' нету ни в области видимости функции, ни в глобальной области
+                                            видимости
+                                            (попытка присвоить значение не объявленой переменной)
+                                        </li>
+                                        <li>
+                                            Переменная 'a' будет автоматически объявлена не в области видимости функции,
+                                            а в глобальной области видимости
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        Не рекомендуется присваивать значение переменным которые небыли объявлены ранее.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h4 class="title-4">Строгий режим (strict mode)</h4>
+                                    <p>
+                                        Инструкция интерпретатору JS анализировать код более пристально
+                                    </p>
+                                    <div class="def">
+                                        <span>'use strict'</span>
+                                        <p>
+                                            строка должна быть первой в глобальной области видимости или в области
+                                            видимости функции
+                                        </p>
+                                    </div>
+                                    <p>
+                                        Например, если 'use strict' активен, то переменные не будут автоматически
+                                        объявлятся.
+                                    </p>
+                                    <img src="./img/07/02.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-list__item spollers__item">
+                            <button type="button" data-spoller class="btn btn-reset course-list__btn spollers__title">
+                                Операторы
+                            </button>
+                            <div class="course-list__body spollers__body">
+                                <div>
+                                    <div class="def">
+                                        <span>Оператор</span>
+                                        <p>
+                                            Это встроенная функция
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <ul>
+                                        <span>Основные операторы:</span>
+                                        <li class="bg-gray-list">
+                                            <span>Арифметические</span>
+                                            <p>
+                                                <span>+</span>
+                                                <span>-</span>
+                                                <span>*</span>
+                                                <span>/</span>
+                                            </p>
+                                        </li>
+                                        <li class="bg-gray-list">
+                                            <span>Сравнения</span>
+                                            <p>
+                                                <span>===</span>
+                                                <span>! ==</span>
+                                                <span>
+                                                    ≤</span> <span>≥
+                                                </span>
+                                            </p>
+                                        </li>
+                                        <li class="bg-gray-list">
+                                            <span>Логические</span>
+                                            <p>
+                                                <span>!</span>
+                                                <span>&&</span>
+                                                <span>||</span>
+                                            </p>
+                                        </li>
+                                        <li class="bg-gray-list">
+                                            <span>Присваивания</span>
+                                            <p>
+                                                <span>=</span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <span>Текстовые операторы:</span>
+                                        <li>typeof</li>
+                                        <li>instanceof</li>
+                                        <li>new</li>
+                                        <li>delete</li>
+                                    </ul>
+                                    <ul>
+                                        <span>Еще операторы:</span>
+                                        <li class="bg-gray-list">
+                                            <p>
+                                                <span>,</span>
+                                            </p>
+                                            <span>можно объявить несколько переменных</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="def">
+                                        <span>Операнд</span>
+                                        <p>
+                                            то, что находится вокруг операторов
+                                        </p>
+                                    </div>
+                                    <img src="./img/08/01.jpg" class="img--small" alt="">
+                                    <p>
+                                        В примере выше 2 операнда. Левый и правый.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h4 class="title-4">Унарные и бинарные операторы</h4>
+                                    <div class="def">
+                                        <span>Унарный оператор</span>
+                                        <p>
+                                            Всегда один операнд (подчеркнуты операторы)
+                                        </p>
+                                    </div>
+                                    <img src="./img/08/02.jpg" class="img--small" alt="">
+                                    <div class="def">
+                                        <span>Бинарный оператор</span>
+                                        <p>
+                                            Всегда два операнда (подчеркнуты операторы)
+                                        </p>
+                                    </div>
+                                    <img src="./img/08/03.jpg" class="img--small" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="title-4">Инфиксная запись</h4>
+                                    <p>
+                                        Оператор находится между операндами
+                                    </p>
+                                    <img src="./img/08/04.jpg" class="img--small" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="title-4">Префиксная запись</h4>
+                                    <p>
+                                        Оператор стоит перед операндом
+                                    </p>
+                                    <img src="./img/08/05.jpg" class="img--small" alt="">
+                                </div>
+                                <div>
+                                    <h4 class="title-4">Постфиксная запись</h4>
+                                    <p>
+                                        Оператор стоит после операндами
+                                    </p>
+                                    <img src="./img/08/06.jpg" class="img--small" alt="">
+                                    <p>
+                                        myFunction — операнд, () — оператор.
+                                    </p>
+                                </div>
+                                <div>
+                                    <div class="def">
+                                        <span>Boolean (value)</span>
+                                        <p>
+                                            Проверить значение на true/false
+                                        </p>
+                                    </div>
+                                    <ol>
+                                        <span>Ложные значения:</span>
+                                        <li>false</li>
+                                        <li>0</li>
+                                        <li>Пустая строка ('')</li>
+                                        <li>undefined</li>
+                                        <li>null</li>
+                                    </ol>
+                                </div>
+                                <div>
+                                    <h4 class="title-4">Оператор typeof</h4>
+                                    <div class="def">
+                                        <span>typeof</span>
+                                        <p>
+                                            показывает тип данных (унарный и префиксный оператор)
+                                        </p>
+                                    </div>
+                                    <p>
+                                        Результат typeof всегда строка
+                                    </p>
+                                    <p>
+                                        Две формы записи:
+                                    </p>
+                                    <img src="./img/08/07.jpg" class="img--small" alt="">
+                                    <p>
+                                        Примеры:
+                                    </p>
+                                    <img src="./img/08/08.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="course-list__item spollers__item">
+                            <button type="button" data-spoller class="btn btn-reset course-list__btn spollers__title">
+                                asd
+                            </button>
+                            <div class="course-list__body spollers__body">
+                        
+                            </div>
+                        </div> -->
                     </div>
                 </div>
             </section>

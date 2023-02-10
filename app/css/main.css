@@ -426,11 +426,51 @@ a {
 }
 
 .d-inline-b {
-  display: inline-block;
+  display: inline-block !important;
 }
 
 .d-inline {
-  display: inline;
+  display: inline !important;
+}
+
+.bg-gray-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.bg-gray-list span {
+  margin: 0 !important;
+}
+.bg-gray-list > p:nth-child(1) {
+  margin: 0 7px 0 0px !important;
+}
+.bg-gray-list > p:nth-child(2) {
+  margin: 0 0 0 7px !important;
+}
+.bg-gray-list p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.bg-gray-list p span {
+  background-color: var(--shaft);
+  color: var(--white);
+  border-radius: 10px;
+  padding: 0 10px;
+}
+.bg-gray-list p span:not(:first-child) {
+  margin-left: 7px;
+}
+
+.img--small {
+  max-width: 200px !important;
+}
+
+.img--big {
+  max-width: 400px !important;
 }
 
 .course-list__item:not(:last-child) {
@@ -607,8 +647,5 @@ a {
 }
 .course-list__body .img-row img {
   margin: 0 !important;
-}
-.course-list__body .img--big {
-  max-width: 400px;
 }
 /*# sourceMappingURL=main.css.map */
