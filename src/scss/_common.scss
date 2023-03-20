@@ -16,6 +16,12 @@
     font-weight: 500;
 }
 
+.title-5 {
+    @include adaptiveValue("font-size", 18, 16);
+    line-height: 120%;
+    font-weight: 500;
+}
+
 .text-1 {
     @include adaptiveValue("font-size", 18, 16);
     line-height: 120%;
@@ -93,41 +99,132 @@
 
 .bg-gray-list {
     display: flex;
-    span{
+
+    span {
         margin: 0 !important;
     }
-    >p:nth-child(1){
+
+    >p:nth-child(1) {
         margin: 0 7px 0 0px !important;
     }
-    >p:nth-child(2){
+
+    >p:nth-child(2) {
         margin: 0 0 0 7px !important;
     }
-    p{
+
+    p {
         display: flex;
         align-items: center;
-        span{
+
+        span {
             background-color: var(--shaft);
             color: var(--white);
             border-radius: 10px;
             padding: 0 10px;
-            &:not(:first-child){
+
+            &:not(:first-child) {
                 margin-left: 7px;
             }
         }
     }
 }
-.bg-gray{
+
+.bg-gray {
     background-color: var(--shaft);
     color: var(--white);
     border-radius: 10px;
     padding: 1px 10px;
 }
-.img--small{
+
+.img--small {
     max-width: 200px !important;
 }
-.img--big{
+
+.img--big {
     max-width: 400px !important;
 }
-.img--max{
+
+.img--max {
     max-width: 100% !important;
+}
+
+
+.descr-block {
+
+    span {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    span {
+        display: inline;
+        background-color: var(--shaft);
+        color: var(--white);
+        border-radius: 10px;
+        padding: 1px 5px !important;
+        font-size: 14px;
+        line-height: 100%;
+    }
+
+    p {
+        margin: 3px 0px 0 10px !important;
+    }
+
+    &--add {
+
+        span,
+        p {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        span {
+            display: inline;
+            background-color: var(--shaft);
+            color: var(--white);
+            border-radius: 10px;
+            padding: 1px 5px !important;
+            font-size: 14px;
+            line-height: 100%;
+        }
+
+        div {
+            margin: 3px 0px 0 10px !important;
+            display: flex;
+            flex-direction: column;
+        }
+
+        p {
+            display: inline;
+        }
+    }
+}
+
+.descr-block2 {
+
+    span,
+    p {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    span {
+        background-color: #182e3b;
+        color: #67ee9f;
+        border-radius: 10px;
+        padding: 8px 20px !important;
+        font-size: 14px;
+        line-height: 100%;
+        display: inline-block;
+    }
+
+    p {
+        display: inline;
+
+        &::before {
+            content: '-';
+        }
+    }
+
+
 }

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+"title": "Bogdan Stashchuk — Полный Курс Git и GitHub Для Начинающих"
+})
+
+<body class="page__body">
+    <div class="site-container">
+        @include('partials/header.html')
+        <main class="main">
+            <section class="course gap-top-50">
+                <div class="container">
+                    <h2 class="chapter__title title-2">
+                        Bogdan Stashchuk — Полный Курс Git и GitHub Для Начинающих
+                    </h2>
+                    <div data-spollers data-one-spoller
+                        class="gap-top-30 gap-bottom-30 course__list course-list spollers">
+                        <div class="course-list__item spollers__item">
+                            <button type="button" data-spoller class="btn btn-reset course-list__btn spollers__title">
+                                Введение
+                            </button>
+                            <div class="course-list__body spollers__body">
+                                <div>
+                                    <div class="def">
+                                        <span>Git</span>
+                                        <p>
+                                            Распределённая система контроля версий.
+                                        </p>
+                                    </div>
+                                    <p>
+                                        Git устанавливается на компьютер или на сервер.
+                                    </p>
+                                    <p>
+                                        Основная задача - создавать различные версии
+                                        проекта.
+                                    </p>
+                                    <p>
+                                        Git работает локально без доступа к интернету.
+                                    </p>
+                                    <div class="def">
+                                        <span>GitHub</span>
+                                        <p>
+                                            Сервис хостинга git репозиториев.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="title-4">Преимущества git</h4>
+                                    <ol>
+                                        <li>
+                                            Позволяет сохранять различные версии проектов.
+                                        </li>
+                                        <li>
+                                            Быстрый переход между версиями проекта.
+                                        </li>
+                                        <li>
+                                            Улучшает процесс командной работы.
+                                        </li>
+                                        <li>
+                                            Независимая разработка новых функций в проекте.
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-list__item spollers__item">
+                            <button type="button" data-spoller class="btn btn-reset course-list__btn spollers__title">
+                                Установка и настройка Git
+                            </button>
+                            <div class="course-list__body spollers__body">
+                                <div>
+                                    <h4 class="title-4">Проверка версии</h4>
+                                    <div class="descr-block2">
+                                        <span>
+                                            git --version   
+                                        </span>
+                                        <p>
+                                            Проверить установлен ли git, и его версию. 
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-list__item spollers__item">
+                            <button type="button" data-spoller class="btn btn-reset course-list__btn spollers__title">
+                                asd
+                            </button>
+                            <div class="course-list__body spollers__body">
+
+                            </div>
+                        </div>
+                        <!-- <div class="course-list__item spollers__item">
+                            <button type="button" data-spoller class="btn btn-reset course-list__btn spollers__title">
+                              asd
+                            </button>
+                            <div class="course-list__body spollers__body">
+                             
+                            </div>
+                        </div>  -->
+                    </div>
+                </div>
+            </section>
+        </main>
+        @include('partials/footer.html')
+    </div>
+    @include('partials/popup.html')
+</body>
+
+
+</html>

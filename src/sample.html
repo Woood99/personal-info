@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+"title": "asd"
+})
+
+<body class="page__body">
+    <div class="site-container">
+        @include('partials/header.html')
+        <main class="main">
+            <section class="course gap-top-50">
+                <div class="container">
+                    <h2 class="chapter__title title-2">
+                    asd
+                    </h2>
+                    <div data-spollers data-one-spoller
+                        class="gap-top-30 gap-bottom-30 course__list course-list spollers">
+                        <div class="course-list__item spollers__item">
+                            <button type="button" data-spoller class="btn btn-reset course-list__btn spollers__title">
+                                asd
+                            </button>
+                            <div class="course-list__body spollers__body">
+
+                            </div>
+                        </div>
+                        <div class="course-list__item spollers__item">
+                            <button type="button" data-spoller class="btn btn-reset course-list__btn spollers__title">
+                                asd
+                            </button>
+                            <div class="course-list__body spollers__body">
+
+                            </div>
+                        </div>
+                        <!-- <div class="course-list__item spollers__item">
+                            <button type="button" data-spoller class="btn btn-reset course-list__btn spollers__title">
+                              asd
+                            </button>
+                            <div class="course-list__body spollers__body">
+                             
+                            </div>
+                        </div>  -->
+                    </div>
+                </div>
+            </section>
+        </main>
+        @include('partials/footer.html')
+    </div>
+    @include('partials/popup.html')
+</body>
+
+
+</html>

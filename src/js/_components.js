@@ -1,25 +1,12 @@
-        // const getData = (url) =>
-        //     new Promise((resolve, reject) =>
-        //         fetch(url)
-        //         .then(response => response.json())
-        //         .then(json => resolve(json))
-        //         .catch(error => reject(error))
-        //     )
+                
+                
+                
+                
+                
+                const array = [2, 5, 6, 8, 2];
 
-        // getData('./products.json').then(data => console.log(data)).catch(error => console.log(error.message));
+                const array2 = array.map(function (el) {
+                    console.log(this);
+                })
 
-
-
-
-
-        
-
-        const getData = async (url) => {
-            const response = await fetch(url);
-            const json = await response.json();
-            return json;
-        }
-
-        getData('./products.json')
-            .then(array => console.log(array))
-            .catch(error => console.log(error.message))
+                console.log(array2);

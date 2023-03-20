@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html', {
+"title": "[Itgid] Методы массивов JavaScript [Александр Лущенко]"
+})
+
+<body class="page__body">
+    <div class="site-container">
+        @include('partials/header.html')
+        <main class="main">
+            <section class="course gap-top-50">
+                <div class="container">
+                    <h2 class="chapter__title title-2">
+                        [Itgid] Методы массивов JavaScript [Александр Лущенко]
+                    </h2>
+                    <div data-spollers data-one-spoller
+                        class="gap-top-30 gap-bottom-30 course__list course-list spollers">
+
+                        <div class="course-list__item spollers__item">
+                            <button type="button" data-spoller class="btn btn-reset course-list__btn spollers__title">
+                                indexOf
+                            </button>
+                            <div class="course-list__body spollers__body">
+                                <div>
+                                    <h4 class="title-4">indexOf</h4>
+                                    <img src="./img/itgid-array-methods/01/01.webp" alt="">
+                                    <div class="descr-block">
+                                        <span>Описание:</span>
+                                        <p>
+                                            Позволяет искать значение в массиве.
+                                        </p>
+                                    </div>
+                                    <div class="descr-block">
+                                        <span>Возвращает:</span>
+                                        <p>
+                                            Индекс первого совпадения, или -1 если такого элемента нет.
+                                        </p>
+                                    </div>
+                                    <div class="descr-block--add">
+                                        <span>Дополнительно:</span>
+                                        <div>
+                                            <p>
+                                                Используется строгое сравнение.
+                                            </p>
+                                            <p>
+                                                При поиске строкового значения, учитывается регистр.
+                                            </p>
+                                            <p>
+                                                Аргумент (startPos) - позиция, с которой начать поиск.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5 class="title-5">Примеры:</h5>
+                                        <img src="./img/itgid-array-methods/01/05.webp" class="img--big" alt="">
+                                        <div class="img-row">
+                                            <img src="./img/itgid-array-methods/01/02.webp" class="img--big" alt="">
+                                            <img src="./img/itgid-array-methods/01/03.webp" class="img--big" alt="">
+                                        </div>
+                                        <img src="./img/itgid-array-methods/01/04.webp" class="img--big" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-list__item spollers__item">
+                            <button type="button" data-spoller class="btn btn-reset course-list__btn spollers__title">
+                                includes
+                            </button>
+                            <div class="course-list__body spollers__body">
+                                <div>
+                                    <h4 class="title-4">includes</h4>
+                                    <img src="./img/itgid-array-methods/02/01.webp" alt="">
+                                    <div class="descr-block">
+                                        <span>Описание:</span>
+                                        <p>
+                                            Определяет, содержит ли массив определённый элемент
+                                        </p>
+                                    </div>
+                                    <div class="descr-block">
+                                        <span>Возвращает:</span>
+                                        <p>
+                                            Если переданное значение существует - true, иначе false.
+                                        </p>
+                                    </div>
+                                    <div class="descr-block--add">
+                                        <span>Дополнительно:</span>
+                                        <div>
+                                            <p>
+                                                Используется строгое сравнение.
+                                            </p>
+                                            <p>
+                                                При поиске строкового значения, учитывается регистр.
+                                            </p>
+                                            <p>
+                                                Аргумент (startPos) — позиция, с которой начать поиск.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5 class="title-5">Примеры:</h5>
+                                        <img src="./img/itgid-array-methods/02/02.webp" class="img--big" alt="">
+                                        <img src="./img/itgid-array-methods/02/03.webp" class="img--big" alt="">
+                                        <img src="./img/itgid-array-methods/02/04.webp" class="img--big" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-list__item spollers__item">
+                            <button type="button" data-spoller class="btn btn-reset course-list__btn spollers__title">
+                                push
+                            </button>
+                            <div class="course-list__body spollers__body">
+                                <div>
+                                    <h4 class="title-4">push</h4>
+                                    <img src="./img/itgid-array-methods/03/01.webp" class="img--small" alt="">
+                                    <div class="descr-block">
+                                        <span>Описание:</span>
+                                        <p>
+                                            Добавляет элемент/ы в конец массива.
+                                        </p>
+                                    </div>
+                                    <div class="descr-block">
+                                        <span>Возвращает:</span>
+                                        <p>
+                                            Длину массива с учётом добавленных элементов.
+                                        </p>
+                                    </div>
+                                    <div class="descr-block--add">
+                                        <span>Дополнительно:</span>
+                                        <div>
+                                            <p>
+
+                                            </p>
+                                            <p>
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5 class="title-5">Примеры:</h5>
+                                        <img src="./img/itgid-array-methods/03/02.webp" alt="">
+                                        <img src="./img/itgid-array-methods/03/03.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-list__item spollers__item">
+                            <button type="button" data-spoller class="btn btn-reset course-list__btn spollers__title">
+                                pop
+                            </button>
+                            <div class="course-list__body spollers__body">
+                                <div>
+                                    <h4 class="title-4">pop</h4>
+                                    <img src="./img/itgid-array-methods/03/06.webp" class="img--small" alt="">
+                                    <div class="descr-block">
+                                        <span>Описание:</span>
+                                        <p>
+                                            Удаляет последний элемент массива
+                                        </p>
+                                    </div>
+                                    <div class="descr-block">
+                                        <span>Возвращает:</span>
+                                        <p>
+                                            Значение удалённого элемента.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h5 class="title-5">Примеры:</h5>
+                                        <img src="./img/itgid-array-methods/03/04.webp" alt="">
+                                        <img src="./img/itgid-array-methods/03/05.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-list__item spollers__item">
+                            <button type="button" data-spoller class="btn btn-reset course-list__btn spollers__title">
+                                shift
+                            </button>
+                            <div class="course-list__body spollers__body">
+                                <div>
+                                    <h4 class="title-4">shift</h4>
+                                    <img src="./img/itgid-array-methods/04/03.webp" class="img--small" alt="">
+                                    <div class="descr-block">
+                                        <span>Описание:</span>
+                                        <p>
+                                            Удаляет первый элемент массива.
+                                        </p>
+                                    </div>
+                                    <div class="descr-block">
+                                        <span>Возвращает:</span>
+                                        <p>
+                                            Значение удалённого элемента.
+                                        </p>
+                                    </div>
+                                    <div class="descr-block--add">
+                                        <span>Дополнительно:</span>
+                                        <div>
+                                            <p>
+                                                Переиндексирует массив. Не рекомендуется к применению на больших
+                                                структурах.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5 class="title-5">Примеры:</h5>
+                                        <img src="./img/itgid-array-methods/04/01.webp" alt="">
+                                        <img src="./img/itgid-array-methods/04/02.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-list__item spollers__item">
+                            <button type="button" data-spoller class="btn btn-reset course-list__btn spollers__title">
+                                unshift
+                            </button>
+                            <div class="course-list__body spollers__body">
+                                <div>
+                                    <h4 class="title-4">unshift</h4>
+                                    <img src="./img/itgid-array-methods/04/04.webp" class="img--small" alt="">
+                                    <div class="descr-block">
+                                        <span>Описание:</span>
+                                        <p>
+                                            Добавляет элемент/ы в начало массива.
+                                        </p>
+                                    </div>
+                                    <div class="descr-block">
+                                        <span>Возвращает:</span>
+                                        <p>
+                                            Длину массива с учётом добавленных элементов.
+                                        </p>
+                                    </div>
+                                    <div class="descr-block--add">
+                                        <span>Дополнительно:</span>
+                                        <div>
+                                            <p>
+                                                Переиндексирует массив. Не рекомендуется к применению на больших
+                                                структурах.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5 class="title-5">Примеры:</h5>
+                                        <img src="./img/itgid-array-methods/04/05.webp" alt="">
+                                        <img src="./img/itgid-array-methods/04/06.webp" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-list__item spollers__item">
+                            <button type="button" data-spoller class="btn btn-reset course-list__btn spollers__title">
+                                slice
+                            </button>
+                            <div class="course-list__body spollers__body">
+                                <div>
+                                    <h4 class="title-4">slice</h4>
+                                    <img src="./img/itgid-array-methods/04/07.webp" alt="">
+                                    <div class="descr-block">
+                                        <span>Описание:</span>
+                                        <p>
+                                            Копирует значения массива с позиции указанной в первом аргументе
+                                            включительно,
+                                            до позиции указаной во втором аргументе не включительно.
+                                        </p>
+                                    </div>
+                                    <div class="descr-block">
+                                        <span>Возвращает:</span>
+                                        <p>
+                                            Новый массив.
+                                        </p>
+                                    </div>
+                                    <div class="descr-block--add">
+                                        <span>Дополнительно:</span>
+                                        <div>
+                                            <p>
+                                                Не меняет исходный массив.
+                                            </p>
+                                            <p>
+                                                Если не указать аргументы, скопирует весь массив.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5 class="title-5">Примеры:</h5>
+                                        <img src="./img/itgid-array-methods/04/08.webp" alt="">
+                                        <img src="./img/itgid-array-methods/04/09.webp" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-list__item spollers__item">
+                            <button type="button" data-spoller class="btn btn-reset course-list__btn spollers__title">
+                                map
+                            </button>
+                            <div class="course-list__body spollers__body">
+                                <div>
+                                    <h4 class="title-4">map</h4>
+                                    <img src="./img/itgid-array-methods/05/01.webp" alt="">
+                                    <div class="descr-block">
+                                        <span>Описание:</span>
+                                        <p>
+                                            Применяет callback функцию к каждому элементу массива
+                                            и добавляет элемент в новый массив.
+                                        </p>
+                                    </div>
+                                    <div class="descr-block">
+                                        <span>Возвращает:</span>
+                                        <p>
+                                            Массив результатов выполнения этой функции.
+                                        </p>
+                                    </div>
+                                    <div class="descr-block--add">
+                                        <span>Дополнительно:</span>
+                                        <div>
+                                            <p>
+                                                Исходный массив и новый массив всегда будет совпадать по длине.
+                                            </p>
+                                            <p>
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5 class="title-5">Примеры:</h5>
+                                        <div class="img-row">
+                                            <img src="./img/itgid-array-methods/05/02.webp" alt="">
+                                            <img src="./img/itgid-array-methods/05/05.webp" alt="">
+                                        </div>
+                                        <div class="img-row">
+                                            <img src="./img/itgid-array-methods/05/03.webp" alt="">
+                                            <img src="./img/itgid-array-methods/05/06.webp" alt="">
+                                        </div>
+                                        <img src="./img/itgid-array-methods/05/04.webp" alt="">
+                                        <img src="./img/itgid-array-methods/05/07.webp" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-list__item spollers__item">
+                            <button type="button" data-spoller class="btn btn-reset course-list__btn spollers__title">
+                                filter
+                            </button>
+                            <div class="course-list__body spollers__body">
+                                <div>
+                                    <h4 class="title-4">filter</h4>
+                                    <img src="./img/itgid-array-methods/" alt="">
+                                    <div class="descr-block">
+                                        <span>Описание:</span>
+                                        <p>
+                                            
+                                        </p>
+                                    </div>
+                                    <div class="descr-block">
+                                        <span>Возвращает:</span>
+                                        <p>
+
+                                        </p>
+                                    </div>
+                                    <div class="descr-block--add">
+                                        <span>Дополнительно:</span>
+                                        <div>
+                                            <p>
+
+                                            </p>
+                                            <p>
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5 class="title-5">Примеры:</h5>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-list__item spollers__item">
+                            <button type="button" data-spoller class="btn btn-reset course-list__btn spollers__title">
+                                asd
+                            </button>
+                            <div class="course-list__body spollers__body">
+                                <div>
+                                    <h4 class="title-4">asd</h4>
+                                    <img src="./img/itgid-array-methods/" alt="">
+                                    <div class="descr-block">
+                                        <span>Описание:</span>
+                                        <p>
+
+                                        </p>
+                                    </div>
+                                    <div class="descr-block">
+                                        <span>Возвращает:</span>
+                                        <p>
+
+                                        </p>
+                                    </div>
+                                    <div class="descr-block--add">
+                                        <span>Дополнительно:</span>
+                                        <div>
+                                            <p>
+
+                                            </p>
+                                            <p>
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5 class="title-5">Примеры:</h5>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="course-list__item spollers__item">
+                            <button type="button" data-spoller class="btn btn-reset course-list__btn spollers__title">
+                                asd
+                            </button>
+                            <div class="course-list__body spollers__body">
+                                <div>
+                                    <h4 class="title-4">asd</h4>
+                                    <img src="./img/itgid-array-methods/" alt="">
+                                    <div class="descr-block">
+                                        <span>Описание:</span>
+                                        <p>
+
+                                        </p>
+                                    </div>
+                                    <div class="descr-block">
+                                        <span>Возвращает:</span>
+                                        <p>
+
+                                        </p>
+                                    </div>
+                                    <div class="descr-block--add">
+                                        <span>Дополнительно:</span>
+                                        <div>
+                                            <p>
+                                                
+                                            </p>
+                                            <p>
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5 class="title-5">Примеры:</h5>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <div class="course-list__item spollers__item">
+                            <button type="button" data-spoller class="btn btn-reset course-list__btn spollers__title">
+                              asd
+                            </button>
+                            <div class="course-list__body spollers__body">
+                             
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+        </main>
+        @include('partials/footer.html')
+    </div>
+    @include('partials/popup.html')
+</body>
+
+
+</html>
